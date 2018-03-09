@@ -1,6 +1,6 @@
 ## http://serverless-e-crowder.s3-website-us-east-1.amazonaws.com/
 
-## This project is a serverless, full-stack blog application that allows users to create, view and delete posts. See below for a summary of tech utilized on this project:
+This project is a serverless, full-stack blog application that allows users to create, view and delete posts. See below for a summary of tech utilized on this project:
 
 Front-end:
 
