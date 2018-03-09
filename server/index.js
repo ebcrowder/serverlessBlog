@@ -100,6 +100,34 @@ app.post('/posts', function(req, res) {
   });
 });
 
+// Update post endpoint
+app.patch('/posts/:postId', function(req, res) {
+  const { postId, title, categories, content } = req.body;
+  const params = {
+    TableName: BLOG_TABLE,
+    Key: {
+      postId: req.params.postId
+    },
+    UpdateExpression:
+      'set title = :title, categories = :categories, content = :content',
+    ExpressionAttributeValues: {
+      ':title': title,
+      ':categories': categories,
+      ':content': content
+    },
+    ReturnValues: 'ALL_NEW'
+  };
+
+  dynamoDb.update(params, (error, data) => {
+    if (error) {
+      console.log(error);
+      res.status(400).json({ error: 'Could not update post' });
+    } else {
+      res.status(200).json({ message: 'Post updated' });
+    }
+  });
+});
+
 // Delete post endpoint
 app.delete('/posts/:postId', function(req, res) {
   const params = {

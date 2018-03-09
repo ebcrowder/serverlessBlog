@@ -4,6 +4,7 @@ export const FETCH_POSTS = 'fetch_posts';
 export const FETCH_POST = 'fetch_post';
 export const CREATE_POST = 'create_post';
 export const DELETE_POST = 'delete_post';
+export const UPDATE_POST = 'update_post';
 
 const ROOT_URL = 'https://x69adyw9y0.execute-api.us-east-1.amazonaws.com/dev';
 
@@ -42,6 +43,17 @@ export function deletePost(postId, callback) {
 
   return {
     type: DELETE_POST,
+    payload: request
+  };
+}
+
+export function updatePost(postId, callback) {
+  const request = axios
+    .patch(`${ROOT_URL}/posts/${postId}`)
+    .then(() => callback());
+
+  return {
+    type: UPDATE_POST,
     payload: request
   };
 }
