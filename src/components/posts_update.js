@@ -23,8 +23,9 @@ class PostsUpdate extends Component {
     );
   }
 
-  onSubmit(values, id) {
-    this.props.updatePost((values, id), () => {
+  onSubmit(values) {
+    const { id } = this.props.match.params;
+    this.props.updatePost(values, id, () => {
       this.props.history.push('/');
     });
   }
