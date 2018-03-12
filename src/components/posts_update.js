@@ -23,8 +23,8 @@ class PostsUpdate extends Component {
     );
   }
 
-  onSubmit(values) {
-    this.props.updatePost(values, () => {
+  onSubmit(values, id) {
+    this.props.updatePost((values, id), () => {
       this.props.history.push('/');
     });
   }
