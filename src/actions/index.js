@@ -47,10 +47,10 @@ export function deletePost(postId, callback) {
   };
 }
 
-export function updatePost(values, callback) {
+export function updatePost(values, postId, callback) {
   console.log(values);
   const request = axios
-    .patch(`${ROOT_URL}/posts/update`, values)
+    .patch(`${ROOT_URL}/posts/update/${postId}`, values)
     .then(() => callback());
 
   return {
