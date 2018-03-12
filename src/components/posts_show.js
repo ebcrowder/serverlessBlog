@@ -44,7 +44,10 @@ class PostsShow extends Component {
         >
           Delete Post
         </button>
-        <Link className="btn btn-success float-left" to="/posts/update">
+        <Link
+          className="btn btn-success float-left"
+          to={`/posts/update/${post.postId}`}
+        >
           Update Post
         </Link>
         <Link className="btn btn-info float-left" to="/">

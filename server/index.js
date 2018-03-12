@@ -101,7 +101,7 @@ app.post('/posts', function(req, res) {
 });
 
 // Update post endpoint
-app.patch('/posts/:postId', function(req, res) {
+app.patch('/posts/update/:postId', function(req, res) {
   const { postId, title, categories, content } = req.body;
   const params = {
     TableName: BLOG_TABLE,
