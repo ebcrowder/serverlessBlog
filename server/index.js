@@ -23,10 +23,6 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.get('/', function(req, res) {
-  res.send('Hello World!');
-});
-
 // Get post endpoint
 app.get('/posts/:postId', function(req, res) {
   const params = {
