@@ -3,13 +3,13 @@
 This project is a full-stack blog application that allows users to create, view, update and delete posts. It features form validation and is hosted on aws utilizing serverless infrastructure methodology.
 
 ![alt text](/post1.jpg?raw=true "Index")
-_**Index of posts._**
+_Index of posts._
 
 ![alt text](/post3.jpg?raw=true "Post")
-_**Users can delete and update posts upon viewing them._**
+_Users can delete and update posts upon viewing them._
 
 ![alt text](/post2.jpg?raw=true "Form")
-_**Post form provides users with field validation feedback to ensure that forms are complete prior to submission._**
+_Post form provides users with field validation feedback to ensure that forms are complete prior to submission._
 
 ## Built With
 
