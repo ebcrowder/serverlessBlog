@@ -4,10 +4,10 @@ This project is a full-stack blog application that allows users to create, view,
 
 ![alt text](/post1.jpg?raw=true "Index")
 Index of posts.
-![alt text](/post2.jpg?raw=true "Form")
-Post form provides users with field validation feedback to ensure that forms are complete prior to submission.
 ![alt text](/post3.jpg?raw=true "Post")
 Users can delete and update posts upon viewing them.
+![alt text](/post2.jpg?raw=true "Form")
+Post form provides users with field validation feedback to ensure that forms are complete prior to submission.
 
 ## Built With
 
